@@ -36,7 +36,7 @@ class MainActivity : AppCompatActivity() {
             startService(Intent(this,SoundService::class.java))
         }catch (e:Exception){
             e.printStackTrace()
-            Toast.makeText(this,"helo",Toast.LENGTH_SHORT).show()
+            Toast.makeText(this,"hello",Toast.LENGTH_SHORT).show()
         }
         playingPlayer = PLAYINGPLAYER.FIRST_PLAYER
         winner = WINNER_OF_GAME.NO_ONE
