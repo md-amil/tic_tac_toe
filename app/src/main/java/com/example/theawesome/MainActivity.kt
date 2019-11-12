@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.ImageButton
+import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import kotlinx.android.synthetic.main.activity_main.*
 import java.lang.Exception
@@ -35,6 +36,7 @@ class MainActivity : AppCompatActivity() {
             startService(Intent(this,SoundService::class.java))
         }catch (e:Exception){
             e.printStackTrace()
+            Toast.makeText(this,"helo",Toast.LENGTH_SHORT).show()
         }
         playingPlayer = PLAYINGPLAYER.FIRST_PLAYER
         winner = WINNER_OF_GAME.NO_ONE
